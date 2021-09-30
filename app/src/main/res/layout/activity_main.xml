@@ -18,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/service_question"
         android:layout_width="wrap_content"
@@ -78,84 +79,122 @@
         android:id="@+id/result_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tip_amount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calculate_button" />
+        app:layout_constraintTop_toBottomOf="@id/calculate_button"
+        tools:text="Tip Amount: $10" />
 
 
     <EditText
         android:id="@+id/liquid_chager_ml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="50dp"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
+        android:maxWidth="90dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
         android:text="@string/liquid_ml"
+        android:textAlignment="center"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/result_textview" />
 
-    <EditText
-        android:id="@+id/liquid_chager_onz"
+    <TextView
+        android:id="@+id/liquid_name_mL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="70dp"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:text="@string/liquid_onz"
+        android:layout_marginTop="12dp"
+        android:text="@string/liquid_name_ml"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/liquid_chager_ml"
+
+        app:layout_constraintTop_toBottomOf="@id/result_textview" />
+
+    <TextView
+        android:id="@+id/liquid_name_equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/liquid_name_equal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/result_textview" />
 
-    <Button
-        android:id="@+id/liquid_calculate_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/liquid_claculate_string"
-        app:layout_constraintEnd_toEndOf="@id/option_switch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liquid_chager_ml" />
-
-
     <EditText
-        android:id="@+id/crack_chager_gram"
+        android:id="@+id/liquid_chager_oz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:text="@string/crack_gram"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liquid_calculate_button" />
-
-
-    <EditText
-        android:id="@+id/liquid_chager_cups"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="70dp"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal"
+        android:maxWidth="90dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:text="@string/crack_cups"
+        android:text="@string/liquid_oz"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/liquid_calculate_button" />
+        app:layout_constraintTop_toBottomOf="@id/result_textview" />
 
-    <Button
-        android:id="@+id/calculate_button_gram"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/liquid_name_oz"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/liquid_name_oz"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/liquid_chager_oz"
 
-        android:text="@string/crack_calculate_string"
-        app:layout_constraintEnd_toEndOf="@id/option_switch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/crack_chager_gram" />
+        app:layout_constraintTop_toBottomOf="@id/result_textview" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/liquid_calculate_button"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/liquid_claculate_string"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/option_switch"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/liquid_chager_ml" />-->
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/crack_chager_gram"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="70dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:importantForAutofill="no"-->
+    <!--        android:inputType="numberDecimal"-->
+    <!--        android:minHeight="48dp"-->
+    <!--        android:text="@string/crack_gram"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/liquid_calculate_button" />-->
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/liquid_chager_cups"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:layout_marginEnd="70dp"-->
+    <!--        android:importantForAutofill="no"-->
+    <!--        android:inputType="numberDecimal"-->
+    <!--        android:minWidth="48dp"-->
+    <!--        android:minHeight="48dp"-->
+    <!--        android:text="@string/crack_cups"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/liquid_calculate_button" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/calculate_button_gram"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:text="@string/crack_calculate_string"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/option_switch"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/crack_chager_gram" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

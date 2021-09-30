@@ -7,11 +7,14 @@
     <string name="okay_service_tip">Okay (15%)</string>
     <string name="round_up_tip">Round up tip?</string>
     <string name="calculate">Calculate</string>
-    <string name="tip_amount">Tip Amount</string>
-    <string name="liquid_ml">ml</string>
-    <string name="liquid_onz">onz</string>
+    <string name="tip_amount">Tip Amount: %s</string>
+    <string name="liquid_ml">1</string>
+    <string name="liquid_oz">0.033814</string>
     <string name="liquid_claculate_string">liquid_claculate</string>
     <string name="crack_gram">gram</string>
     <string name="crack_cups">cups</string>
     <string name="crack_calculate_string">crack calculate</string>
+    <string name="liquid_name_ml">mL</string>
+    <string name="liquid_name_oz">oz</string>
+    <string name="liquid_name_equal">==</string>
 </resources>
